@@ -972,14 +972,15 @@
     <div
         x-data="{
         activeImage: 1,
-        amountOfImages: 1,
+        amountOfImages: 3,
         loop() {
             setInterval(() => { this.activeImage = this.activeImage === this.amountOfImages ? 1 : this.activeImage + 1 }, 5000)
         },
-        }"
-            x-init="loop"
-            class="relative flex w-full overflow-x-hidden h-72 md:h-96 lg:h-full lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2"
-        >
+    }"
+        x-init="loop"
+        class="relative flex w-full overflow-x-hidden h-72 md:h-96 lg:h-full lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2"
+    >
+        
         <div
             class="absolute inset-0"
             x-show="activeImage === 1"
@@ -990,17 +991,53 @@
             x-transition:leave-start="transform"
             x-transition:leave-end="transform -translate-x-full"
         >
-        
             
-            <img
-                class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
-                src="https://landing-page-app-hero-images.s3.amazonaws.com/media/WV8YWNHLV5PDTX2UX3RY1NDGG38QXKT3QS34YZ2H.jpeg"
-                alt=""
-            />
-                
-        
+                <img
+                    class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
+                    src="https://landing-page-app-hero-images.s3.amazonaws.com/media/8F0OSBP1D2OEJPJPVQ2STJJEJ2OK7J712C3MHETW.jpeg"
+                    alt="Remodeling and Construction company Caro Construction &amp; Remodeling in Houston, TX"
+                />
             
         </div>
+        
+        <div
+            class="absolute inset-0"
+            x-show="activeImage === 2"
+            x-transition:enter="transition duration-1000"
+            x-transition:enter-start="transform translate-x-full"
+            x-transition:enter-end="transform translate-x-0"
+            x-transition:leave="transition duration-1000"
+            x-transition:leave-start="transform"
+            x-transition:leave-end="transform -translate-x-full"
+        >
+            
+                <img
+                    class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
+                    src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Y1FOWCMF4RFBCVJ6VW8CNRSN1DR23W0RWVMLB0L0.jpeg"
+                    alt="Remodeling and Construction company Caro Construction &amp; Remodeling in Houston, TX"
+                />
+            
+        </div>
+        
+        <div
+            class="absolute inset-0"
+            x-show="activeImage === 3"
+            x-transition:enter="transition duration-1000"
+            x-transition:enter-start="transform translate-x-full"
+            x-transition:enter-end="transform translate-x-0"
+            x-transition:leave="transition duration-1000"
+            x-transition:leave-start="transform"
+            x-transition:leave-end="transform -translate-x-full"
+        >
+            
+                <img
+                    class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
+                    src="https://landing-page-app-hero-images.s3.amazonaws.com/media/13FMV25KAMP3P1CGWYF6RKZWYH3USRQMBOSVQT7L.jpeg"
+                    alt="Remodeling and Construction company Caro Construction &amp; Remodeling in Houston, TX"
+                />
+            
+        </div>
+        
     </div>
     
 </div>
