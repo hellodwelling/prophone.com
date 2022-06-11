@@ -939,7 +939,7 @@
             <div
     x-data="{
         activeImage: 0,
-        amountOfImages: 2,
+        amountOfImages: 3,
         next() {
             if (this.activeImage < this.amountOfImages - 1)
                 this.activeImage ++;
@@ -960,7 +960,7 @@
                     <button @click="activeImage = 0; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/13FMV25KAMP3P1CGWYF6RKZWYH3USRQMBOSVQT7L.jpeg" alt="Exterior Remodeling for Caro Construction &amp; Remodeling in Houston, TX" loading="lazy"/>
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/57d5e8c6-380c-429a-bf5a-f848b06863a5.png" alt="Exterior Remodeling for Caro Construction &amp; Remodeling in Houston, TX" loading="lazy"/>
                             
                         </div>
 
@@ -975,6 +975,23 @@
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 1; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                        <div class="aspect-w-3 aspect-h-2">
+                            
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/13FMV25KAMP3P1CGWYF6RKZWYH3USRQMBOSVQT7L.jpeg" alt="Exterior Remodeling for Caro Construction &amp; Remodeling in Houston, TX" loading="lazy"/>
+                            
+                        </div>
+
+                        <div class="space-y-1 text-lg font-medium leading-6">
+                            <p class="line-clamp-3"></p>
+                            <h3 class="text-primary"></h3>
+                        </div>
+                    </button>
+                </div>
+            </li>
+        
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
+                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
+                    <button @click="activeImage = 2; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             
                                 <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/R2U1E7WNHPNY2ZI7H0SIQAUWL5TAFJW98RSTC2K5.jpeg" alt="Exterior Remodeling for Caro Construction &amp; Remodeling in Houston, TX" loading="lazy"/>
@@ -1034,12 +1051,19 @@
                                 
                                     <li class="flex flex-col" x-show="activeImage === 0">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/13FMV25KAMP3P1CGWYF6RKZWYH3USRQMBOSVQT7L.jpeg" alt="Exterior Remodeling for Caro Construction &amp; Remodeling in Houston, TX" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/57d5e8c6-380c-429a-bf5a-f848b06863a5.png" alt="Exterior Remodeling for Caro Construction &amp; Remodeling in Houston, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
                                 
                                     <li class="flex flex-col" x-show="activeImage === 1">
+                                            
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/13FMV25KAMP3P1CGWYF6RKZWYH3USRQMBOSVQT7L.jpeg" alt="Exterior Remodeling for Caro Construction &amp; Remodeling in Houston, TX" loading="lazy"/>
+                                            <p lorem="1" class="mt-3 text-gray-500"></p>
+                                        
+                                    </li>
+                                
+                                    <li class="flex flex-col" x-show="activeImage === 2">
                                             
                                             <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/R2U1E7WNHPNY2ZI7H0SIQAUWL5TAFJW98RSTC2K5.jpeg" alt="Exterior Remodeling for Caro Construction &amp; Remodeling in Houston, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
